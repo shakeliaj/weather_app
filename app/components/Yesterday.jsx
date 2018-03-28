@@ -46,7 +46,7 @@ class Yesterday extends Component {
       const yesterday = JSON.parse(this.getYesterdaysConditions())
       const date = yesterday.history.date.pretty        
       return (
-        <div className='weather panel panel-default container container-yesterday'>
+        <div className='weather panel panel-success container container-yesterday'>
             <div className='panel-heading'><h1>{date}</h1></div>
             <div className='panel-body'>
                 {this.getYesterday(yesterday)}

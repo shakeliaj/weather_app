@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 class FooterNav extends Component {
     render() {
       return (
-        <div className='container-footer fixed-bottom alert alert-secondary'>
+        <div className='container-footer fixed-bottom alert alert-info'>
             <ul className="nav justify-content-center">
                 <li className="nav-item">
                     <Link to='/yesterday' className='nav-link'>
@@ -13,7 +13,7 @@ class FooterNav extends Component {
                 </li>
                 <li className="nav-item">
                     <Link to='/today' className='nav-link'>
-                        <h4 className='nav-item' id='today'>Today</h4>
+                        <h4 className='nav-item' id='today'>Current</h4>
                     </Link>                
                 </li>
                 <li className="nav-item">

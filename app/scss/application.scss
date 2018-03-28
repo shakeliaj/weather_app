@@ -1,15 +1,25 @@
 body {
     text-align: center;
+    background-image: url("http://www.highrises.com/images/slideshow/288031042.jpg");
+
+    .panel-default>.panel-heading { 
+        background-color: '#17a2b8';
+    }
 
     .container-navigation {
         margin-left: 15px;
         margin-right: 15px;
         .fa {
             position: absolute;
-            left: 10px;
             font-size: 25px;
             line-height: 1.2;
             color: #383d41;
+        }
+        #home {
+            right: 10px;            
+        }
+        #back {
+            left: 10px;            
         }
         .fa:hover, .fa:active {
             color: indianred;
@@ -48,17 +58,9 @@ body {
     //end home
 
     .weather {
-        margin-top: 50px;
+        margin-top: 100px;
         padding-left: 0;
         padding-right: 0;
-
-        .panel-heading {
-            // background-color: '#18a2b9' !important;
-            
-            h1 {
-                // color: #ddd;
-            }
-        }
 
         .panel-body {
             div {
@@ -74,17 +76,24 @@ body {
     }
     
     .container-forecast {
-        border: 1px solid red;
         margin-left: 15px;
         margin-right: 15px;
+        height: 500px;
+        margin-top: 60px;
+        overflow: scroll;
 
         h1 {
             margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .table>tbody>tr>td {
+            vertical-align: middle;
         }
     }
 }
 @media screen and (min-width: 961px) {
-    .container-today {
+    .weather {
         width: 60%;
     }
 }

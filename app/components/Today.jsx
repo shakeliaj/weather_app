@@ -57,7 +57,7 @@ class Today extends Component {
       const date = moment(conditions.current_observation.observation_time_rfc822).format('MMMM Do, YYYY')
      
       return (
-        <div className='weather panel panel-default container container-today'>
+        <div className='weather panel panel-success container container-today'>
             <div className='panel-heading'><h1>{date}</h1></div>
             <div className='panel-body'>
                 {this.getToday(conditions)}
