@@ -88,6 +88,33 @@ body {
         margin-top: 60px;
         overflow: scroll;
 
+        .panel-heading {
+            position: absolute;
+        }
+
+        .panel-body {
+            margin-top: 100px;
+
+            thead {
+                margin-top: -10px;
+                position: absolute;
+                display: block;
+                background-color: white;
+                z-index: 100;
+
+            }
+
+            tbody {
+                margin-top: 20px;
+                display: block;
+
+                tr {
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+
         h1 {
             margin-bottom: 20px;
             margin-top: 20px;
@@ -101,5 +128,31 @@ body {
 @media screen and (min-width: 961px) {
     .weather {
         width: 60%;
+    }
+
+    .container-forecast, .container-forecast > .panel-heading {
+        width: 97%;
+    } 
+
+    .container-forecast > .panel-body > thead, .container-forecast > .panel-body > thead > tr {
+        width: 97%
+    }
+
+    .container-forecast > .panel-body > thead > tr > th, .container-forecast > .panel-body > tbody > tr > td {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .container-forecast, .container-forecast > .panel-heading {
+        width: 95%;
+    } 
+
+    .container-forecast > .panel-body > thead, .container-forecast > .panel-body > thead > tr {
+        width: 95%
+    }
+
+    .container-forecast > .panel-body > thead > tr > th, .container-forecast > .panel-body > tbody > tr > td {
+        width: 8%;
     }
 }

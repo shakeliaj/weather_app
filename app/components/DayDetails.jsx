@@ -27,7 +27,7 @@ class DayDetails extends Component {
 
     render() {
       const conditions = this.props.location.state.day
-      const date = `${conditions.date.monthname}, ${conditions.date.day}, ${conditions.date.year}`
+      const date = `${conditions.date.weekday}, ${conditions.date.monthname}, ${conditions.date.day}, ${conditions.date.year}`
       return (
         <div className='weather panel panel-success container container-details'>
             <div className='panel-heading'><h1>{date}</h1></div>
