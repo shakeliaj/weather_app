@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom'
 class Navigation extends Component {
     render() {
       return (
-        <div className='container container-navigation'>
-            <ul><Link to='/ten-day-forecast'>Hello</Link></ul>
+        <div className='container-navigation alert alert-secondary'>
+            <Link to='/'><i id='home' className='fa fa-home' /></Link>
+            <h1>Weather</h1>
         </div>
       )
     }

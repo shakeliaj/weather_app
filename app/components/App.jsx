@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import Home from './Home.jsx'
 
 import {
@@ -14,9 +15,9 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Switch>
-          <Route path='/' component={Home} />
-        </Switch>
+          <Switch>
+            <Route path='/' component={Home} />
+          </Switch>
       </Router>
     )
   }

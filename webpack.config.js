@@ -5,6 +5,7 @@ const BUILD_DIR = path.join(__dirname, 'app', 'build')
 const APP_DIR = path.join(__dirname, 'app')
 const config = {
    entry: path.join(APP_DIR, 'index.js'),
+   mode: 'development',
    output: {
      path: BUILD_DIR,
      filename: 'bundle.js'     
@@ -27,7 +28,8 @@ const config = {
          loader: "babel-loader",
          options: {
            cacheDirectory: true,
-           presets: ['react', 'es2015'] // compiles JSX / ES6 into commonJS
+           presets: ['react', 'es2015'], // compiles JSX / ES6 into commonJS
+           compact: false
          }
        }]
      }
