@@ -1,5 +1,11 @@
+html {
+    height: 100vh;
+}
 body {
     text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
     background-image: url("http://www.highrises.com/images/slideshow/288031042.jpg");
 
     .panel-default>.panel-heading { 

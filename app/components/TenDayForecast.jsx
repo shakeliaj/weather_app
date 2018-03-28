@@ -52,7 +52,6 @@ class TenDayForecast extends Component {
 
     render() {
       const forecast = JSON.parse(this.getTenDayForecastConditions())
-      console.log('forecast', forecast)        
       return (
         <div className='panel panel-success container-forecast'>
             <div className='panel-heading'><h1>10 Day Forecast</h1></div>
